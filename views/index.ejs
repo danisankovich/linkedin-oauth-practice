@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if (!user) { %>
+	<h2>Welcome! Please log in.</h2>
+<% } else { %>
+	<h2>Hello, <%= user.displayName %>.</h2>
+<% } %>
+  </body>
+</html>
